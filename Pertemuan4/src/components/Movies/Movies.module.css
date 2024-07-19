@@ -1,0 +1,78 @@
+/* Small Screen */
+.container {
+    margin: 1rem;
+}
+
+.movies {
+    margin: 5rem 0;
+    text-align: center;
+}
+
+.movies__title {
+    margin-bottom: 1rem;
+    font-size: 2.44rem;
+    color: #dc1010;
+}
+
+.movie__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Untuk menyelaraskan elemen secara vertikal di tengah */
+    margin-bottom: 1rem;
+}
+
+.movie__image {
+    border-radius: 25px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.movie__title {
+    color: #fff;
+    font-size: 1.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.movie__date {
+    color: #fff;
+}
+
+/* Medium Screen */
+@media (min-width: 768px) {
+    .movie__container {
+        flex-direction: row;
+        justify-content: flex-start; /* Untuk menyelaraskan elemen ke kiri */
+        align-items: center;
+        text-align: left;
+    }
+
+    .movie__image {
+        max-width: 150px;
+        margin-right: 20px; /* Jarak antara gambar dan detail film */
+        margin-bottom: 0; /* Hapus margin bawah */
+    }
+
+    .movie__details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Untuk menyelaraskan elemen secara vertikal di tengah */
+    }
+}
+
+/* Large Screen */
+@media (min-width: 992px) {
+    .container {
+        max-width: 1200px;
+        margin: 3rem auto;
+    }
+
+    .movies {
+        flex-basis: 25%;
+        padding: 1rem;
+    }
+
+    .movie__container {
+        margin-bottom: 2rem;
+    }
+}
